@@ -69,6 +69,7 @@ main{
     min-height: alturacuerpo($numeroequipos)+px;
 }
 .table{
+    font-weight: bold;
     border: black 2px solid;
     thead{
         border-bottom: black 2px solid;
