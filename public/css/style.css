@@ -1,0 +1,150 @@
+body {
+  height: 80%; }
+
+header {
+  padding: 0px;
+  margin: 0px;
+  max-height: 200px;
+  width: 100%;
+  color: aqua;
+  background-color: #503a3a; }
+
+.total {
+  padding: 0px;
+  margin: 0px;
+  width: 100%; }
+
+footer {
+  padding: 0px;
+  margin: 0px;
+  min-height: 100px;
+  width: 100%;
+  color: aqua;
+  background-color: #503a3a; }
+
+main, .izquierdo {
+  min-height: 2000px; }
+
+.table {
+  border: black 2px solid; }
+  .table thead {
+    border-bottom: black 2px solid; }
+
+.izquierdo {
+  background-color: #004c54;
+  padding-top: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: black; }
+  .izquierdo span {
+    padding: 20px;
+    text-decoration: underline; }
+  .izquierdo ul li {
+    padding-top: 20px;
+    padding-left: 30px; }
+    .izquierdo ul li a {
+      color: white;
+      text-decoration: none; }
+  .izquierdo .listaizquierdo {
+    background-color: #d57d0a;
+    min-height: 480px; }
+
+.nombreEquipo {
+  font-weight: bold;
+  background-color: #cacccc;
+  -webkit-text-stroke: 1px black;
+  padding: 0px 5px; }
+
+.pt-2 {
+  list-style-type: square; }
+  .pt-2 .enunciado {
+    text-decoration: underline;
+    font-weight: bold; }
+  .pt-2 span[class^='nombre'] {
+    padding-left: 20px;
+    font-weight: bold;
+    text-decoration: line-through;
+    color: #7c0f0f; }
+
+#Eagles {
+  color: #004c54; }
+
+#Bengals {
+  color: #d57d0a; }
+
+#Chiefs {
+  color: #a71930; }
+
+#Cowboys {
+  color: #cacccc; }
+
+#Bills {
+  color: #d50a0a; }
+
+#Giants {
+  color: #2306e0; }
+
+#Jaguars {
+  color: #9f792c; }
+
+#SF49Ers {
+  color: #7c0f0f; }
+
+.victorias2022 {
+  color: #075707; }
+
+.derrotas2022 {
+  color: #9b0808; }
+
+.empates2022 {
+  color: grey; }
+
+.favorito1 {
+  color: #750606; }
+
+.favorito2 {
+  color: #3a8f20; }
+
+.favorito3 {
+  color: #750606; }
+
+.favorito4 {
+  color: #a09e9e; }
+
+.favorito5 {
+  color: #750606; }
+
+.favorito6 {
+  color: #a09e9e; }
+
+.favorito7 {
+  color: #750606; }
+
+.favorito8 {
+  color: #a09e9e; }
+
+.foto10 {
+  border-right: 3px solid black; }
+
+.foto9 {
+  border-right: 3px solid black; }
+
+.foto8 {
+  border-right: 3px solid black; }
+
+.foto7 {
+  border-right: 3px solid black; }
+
+.foto6 {
+  border-right: 3px solid black; }
+
+.foto5 {
+  border-right: 3px solid black; }
+
+.foto4 {
+  border-right: 3px solid black; }
+
+.foto3 {
+  border-right: 3px solid black; }
+
+/*# sourceMappingURL=style.css.map */

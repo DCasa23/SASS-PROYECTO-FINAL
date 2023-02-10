@@ -1,0 +1,67 @@
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin principal() {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+@mixin cabecera() {
+    padding: 0px;
+    margin: 0px;
+    max-height: 200px;
+    width: 100%;
+    color: aqua;
+    background-color: rgb(80, 58, 58);
+}
+@mixin cabeceranocturna() {
+    padding: 0px;
+    margin: 0px;
+    max-height: 200px;
+    width: 100%;
+    color: rgb(204, 204, 204);
+    background-color: rgb(14, 10, 10);
+}
+
+@mixin footer() {
+    padding: 0px;
+    margin: 0px;
+    min-height: 100px;
+    width: 100%;
+    color: aqua;
+    background-color: rgb(80, 58, 58);
+}
+@mixin tituloEquipos{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+@mixin menu() {
+    padding-top: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: black;
+    span{
+        padding: 20px;
+        text-decoration: underline;
+    }
+    
+
+    ul li {
+        padding-top: 20px;
+        padding-left: 30px;
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+
+
+}

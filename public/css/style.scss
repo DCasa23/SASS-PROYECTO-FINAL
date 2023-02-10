@@ -1,0 +1,154 @@
+@import "mixins.scss";
+
+$contador:1;
+$foto:10;
+$numeroequipos:8;
+
+$noche:false;
+$Giants:#2306e0;
+$Bills:#d50a0a;
+$Chiefs:#a71930;
+$Cowboys:#cacccc;
+$Eagles:#004c54;
+$Jaguars:#9f792c;
+$SF49Ers:#7c0f0f;
+$Bengals:#d57d0a;
+
+
+
+$equipos: $Eagles "Eagles",$Bengals "Bengals",$Chiefs "Chiefs",$Cowboys "Cowboys",$Bills "Bills",$Giants "Giants",$Jaguars "Jaguars",$SF49Ers "SF49Ers"; 
+$colorestablas: ("victorias2022": rgb(7, 87, 7),"derrotas2022":rgb(155, 8, 8),"empates2022":grey) ; 
+
+
+
+@function alturalista($numeroequipos){
+
+    @return (60*$numeroequipos);
+
+}
+@function alturacuerpo($numeroequipos){
+
+    @return (250*$numeroequipos);
+
+}
+@function finalistas($numeroequipos){
+
+    @return ($numeroequipos*0.5);
+
+}
+@function semifinalistas($numeroequipos){
+
+    @return ($numeroequipos*0.25);
+
+}
+@function favorito($numeroequipos){
+
+    @return ($numeroequipos/$numeroequipos);
+
+}
+
+
+body{
+    height: 80%;
+}
+
+header{
+@if $noche{
+    @include cabeceranocturna();
+}@else{
+@include cabecera();
+}
+}
+.total{
+    @include principal();
+}
+footer{
+    @include footer();
+}
+main{
+    min-height: alturacuerpo($numeroequipos)+px;
+}
+.table{
+    border: black 2px solid;
+    thead{
+        border-bottom: black 2px solid;
+    }
+}
+.izquierdo{
+    background-color: #{$Eagles};
+    @extend main;
+    @include menu();
+    .listaizquierdo{
+        background-color: #d57d0a;
+        min-height: alturalista($numeroequipos)+px;
+    }
+}
+.nombreEquipo{
+    font-weight: bold;
+    background-color: #cacccc;
+    -webkit-text-stroke: 1px black;
+    padding: 0px 5px;
+}
+
+
+.pt-2{
+    list-style-type:square;
+    
+   .enunciado{
+    text-decoration: underline;
+    font-weight: bold;
+    } 
+    span[class^='nombre']{
+        padding-left: 20px;
+        font-weight: bold;
+        text-decoration: line-through;
+        color: $SF49Ers;
+    }
+} 
+
+@each $color,$team in $equipos{
+    ##{$team}{
+        color: $color;
+    }
+}
+@each $nombre,$color in $colorestablas{
+    .#{$nombre}{
+        color: $color;
+    
+    }
+}
+@for $favorito from 1 through 8 {
+   
+        @if $favorito%2==0{
+            
+              @if $contador>0{
+            .favorito#{$favorito} {
+                color: rgb(58, 143, 32);
+              }
+              $contador:$contador - 1;
+            }@else{
+                .favorito#{$favorito} {
+                color: rgb(160, 158, 158);
+              }
+            }
+        }@else{
+            
+            .favorito#{$favorito} {
+                color: rgb(117, 6, 6);
+              }
+        }
+        
+    
+    
+  }
+  @while $foto >2  {
+	.foto#{$foto} {
+		border-right: 3px solid black;
+	}
+
+	$foto: $foto - 1;
+}
+
+
+
+

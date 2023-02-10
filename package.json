@@ -1,0 +1,26 @@
+{
+  "name": "SASS-PROYECTO",
+  "version": "1.0.0",
+  "description": "Trabajo Sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx nodemon 01-express.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DCasa23/SASS-PROYECTO.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DCasa23/SASS-PROYECTO/issues"
+  },
+  "homepage": "https://github.com/DCasa23/SASS-PROYECTO#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
